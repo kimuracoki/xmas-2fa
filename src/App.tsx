@@ -40,6 +40,18 @@ const steps: Step[] = [
     pass: "SMALLLAKE",
   },
   {
+    kind: "auth",
+    title: "第三認証",
+    body: "アヒルの巣",
+    pass: "BATHDUCK",
+  },
+  {
+    kind: "auth",
+    title: "第四認証",
+    body: "青い花の額",
+    pass: "BLUEFLOWER",
+  },
+  {
     kind: "final",
     title: "最終認証",
     body: `これが最後の問題。
@@ -122,12 +134,6 @@ export default function App() {
             </div>
           )}
 
-          {step.kind === "final" && (
-            <div style={styles.finalBox}>
-              <strong>入力は不要です。</strong>
-              <div>家の中を探してください。</div>
-            </div>
-          )}
         </main>
 
         <footer style={styles.footer}>
